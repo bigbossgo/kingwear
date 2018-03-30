@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>megapix-image.js test</title>
+    <meta charset="utf-8">
+    <script src="./src/megapix-image.js"></script>
+    <script src="megapix-image.test.js"></script>
+</head>
+
+<body>
+    上传图片: <input type="file" id="fileInput">
+    <br/> 图片预览: <br/> ...
+
+    <img id="resultImage">
+    <input type="hidden" name="picture" id='picture'>
+
+    <br/>
+    <a href="javascript:void(0);" onclick="tj()" class="btn btn-sns-submit">获取图片数据</a>
+
+    <textarea id='te' style="width:300px;height:100px;"></textarea>
+</body>
+<script type="text/javascript">
+    function tj() {
+
+        var t = document.getElementById('resultImage').src;
+        document.getElementById('te').value = t;
+    }
+</script>
+
+</html>
